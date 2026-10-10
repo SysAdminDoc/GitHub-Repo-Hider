@@ -1,0 +1,8 @@
+CLAUDE.md
+CODEX_CHANGELOG.md
+.claude/
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+Thumbs.db
