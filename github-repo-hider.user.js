@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub Repo Hider
 // @namespace    https://github.com/SysAdminDoc/GitHub-Repo-Hider
-// @version      0.0.2
+// @version      0.0.3
 // @description  Hide chosen repositories from your GitHub profile, pinned cards, Stars tab and dashboard sidebar. Adds a Hide button next to Star.
 // @author       SysAdminDoc
 // @license      MIT
@@ -24,7 +24,10 @@
 (() => {
   'use strict';
 
-  const VERSION = '0.0.2';
+  // @noframes alone doesn't stop every manager from running in about:blank frames.
+  if (window.top !== window.self) return;
+
+  const VERSION = '0.0.3';
   const LOG = `[GitHub Repo Hider ${VERSION}]`;
   const KEY_HIDDEN = 'hiddenRepos';
   const KEY_PILL = 'showPill';

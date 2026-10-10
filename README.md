@@ -1,6 +1,6 @@
 # GitHub Repo Hider
 
-[![Version](https://img.shields.io/badge/version-0.0.2-4493f8)](https://github.com/SysAdminDoc/GitHub-Repo-Hider/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-0.0.3-4493f8)](https://github.com/SysAdminDoc/GitHub-Repo-Hider/blob/main/CHANGELOG.md)
 [![License](https://img.shields.io/badge/license-MIT-3fb950)](LICENSE)
 [![Platform](https://img.shields.io/badge/platform-Tampermonkey%20%7C%20Violentmonkey-8250df)](#install)
 

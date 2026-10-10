@@ -1,5 +1,9 @@
 # Changelog
 
+## [0.0.3] - 2026-10-10
+
+- The script now stays out of embedded frames on GitHub pages, even with userscript managers that ignore the no-frames setting.
+
 ## [0.0.2] - 2026-10-10
 
 - Hiding or unhiding a repo no longer pops up a message. The row just goes away. Clear all in the manager still offers Undo.
