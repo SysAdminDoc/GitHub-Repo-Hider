@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- Your Repositories tab now shows each repo's latest release (tag and date) in front of the Updated time. Click it to open the release. A repo with only pre-releases shows its newest one, marked as a pre-release.
+- To get that info the script now fetches each repo's latest release page from github.com with your normal session, and remembers the answer. You can turn it off in the manager, which also stops the requests.
+
 ## [0.0.3] - 2026-10-10
 
 - The script now stays out of embedded frames on GitHub pages, even with userscript managers that ignore the no-frames setting.

@@ -19,6 +19,8 @@ Updates come from the same link, so your manager will pick up new versions on it
 
 On your Repositories tab, every repo gets a **Hide** button right next to Star. Click it and the row's gone. The Stars tab works the same way.
 
+The Repositories tab also shows each repo's latest release (tag and date) in front of the Updated time, so you can see when you last shipped something without opening the repo. Click it to go to the release. A repo with only pre-releases shows its newest one, marked as a pre-release, and a repo with no releases shows nothing extra.
+
 Pinned and popular cards on your profile overview get a small eye button that shows up when you hover a card.
 
 When a page has hidden repos on it, a small pill in the bottom left corner tells you how many. **Show** brings them back dimmed with a dashed outline, so you can unhide one right where it sits. **Manage** opens the full list.
@@ -30,6 +32,7 @@ The manager lets you:
 - Copy the list, which is handy for bringing it over to another browser.
 - Clear everything (there's an Undo for a few seconds after).
 - Turn the corner pill off if you'd rather not see it.
+- Turn the release info off, which also stops the requests it makes.
 
 The same Manage and Show actions are in your userscript manager's menu too.
 
@@ -47,7 +50,9 @@ The repo count on the Repositories tab stays the same, because that number comes
 
 ## Privacy
 
-Your list lives in your userscript manager's storage. The script makes no network requests of its own.
+Your list lives in your userscript manager's storage, and so do the release details the script remembers.
+
+The only requests it makes are for release info. They go to github.com and nowhere else, using your normal session, so there's no token to set up. The first visit to a Repositories tab fetches one page per repo, up to 30, three at a time. After that a repo is only checked again when its Updated time changes or its answer is more than an hour old.
 
 ## Development
 
